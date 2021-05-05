@@ -6,13 +6,13 @@ else {
 }
 var task, desc;
 function submit() {
-    console.log("Updating list...");
+    // console.log("Updating list...");
 
     task = document.getElementById("taskName").value;
     desc = document.getElementById("taskDesc").value;
 
-    console.log(task);
-    console.log(desc);
+    // console.log(task);
+    // console.log(desc);
     if (task.length > 0) {
         if (localStorage.getItem('todolist') == null || localStorage.getItem('todolist') == undefined) {
             var itemJsonArray = [];
@@ -67,7 +67,7 @@ function addToTable() {
     <td>
     <div class="dropdown" id="op${count}">
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-    ...
+    Select Action
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
     <li onclick="markAsDone()"><a class="dropdown-item" href="#">Mark As Done</a></li>
@@ -87,10 +87,10 @@ function addToTable() {
     // }
 }
 function deleteEntry() {
-
+    console.log("Entry deleted!");
 }
 function markasdone() {
-
+    console.log("Entry marked as done!");
 }
 submitbtn.addEventListener("click", submit);
 submitbtn.addEventListener("click", addToTable);
