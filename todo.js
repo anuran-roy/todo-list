@@ -43,7 +43,7 @@ function viewTable() {
         <td>
         <div class="dropdown" id="op${count}">
         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-            Select Action
+            Action
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
             <li onclick="markAsDone()"><a class="dropdown-item" href="#">Mark As Done</a></li>
@@ -67,7 +67,7 @@ function addToTable() {
     <td>
     <div class="dropdown" id="op${count}">
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-    Select Action
+    Action
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
     <li onclick="markAsDone()"><a class="dropdown-item" href="#">Mark As Done</a></li>
